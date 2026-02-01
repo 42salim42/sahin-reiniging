@@ -19,8 +19,8 @@
 
   document.addEventListener("click", (e) => {
     if (!nav.classList.contains("is-open")) return;
-    const isInside = nav.contains(e.target) || toggle.contains(e.target);
-    if (!isInside) closeMenu();
+    const inside = nav.contains(e.target) || toggle.contains(e.target);
+    if (!inside) closeMenu();
   });
 
   window.addEventListener("resize", () => {
